@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul Interaktif Informatika IX | Scratch</title>
+<style>
+:root{--navy:#13294b;--blue:#2563eb;--cyan:#06b6d4;--purple:#7c3aed;--bg:#f3f6fb;--ink:#172033;--muted:#64748b;--card:#fff;--line:#dbe4f0;--green:#15803d;--orange:#ea580c}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}header{background:linear-gradient(125deg,#13294b,#2563eb 62%,#06b6d4);color:white;padding:28px 18px 34px}.hero{max-width:1100px;margin:auto}.school{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;opacity:.9;font-weight:700}.hero h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;margin:10px 0}.hero p{max-width:760px;margin:0;color:#e8f4ff}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid #ffffff55;background:#ffffff17;border-radius:99px;padding:6px 12px;font-size:.9rem}.clock{font-weight:700;font-variant-numeric:tabular-nums}.wrap{max-width:1100px;margin:22px auto;padding:0 16px 50px}.nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.nav a{color:var(--navy);text-decoration:none;background:white;border:1px solid var(--line);padding:8px 12px;border-radius:10px;font-size:.9rem;font-weight:650}.nav a:hover{background:#eaf2ff}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 20px #18315308}.half{grid-column:span 6}.third{grid-column:span 4}.section-title{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:1.4rem;color:var(--navy)}.num{display:inline-grid;place-items:center;width:34px;height:34px;background:#e0ecff;color:var(--blue);border-radius:10px;font-size:1rem}.muted{color:var(--muted)}.tag{display:inline-block;background:#eef2ff;color:#4338ca;border-radius:6px;padding:2px 8px;font-size:.8rem;font-weight:700}.callout{border-left:4px solid var(--cyan);background:#ecfeff;padding:13px 16px;border-radius:0 10px 10px 0;margin:12px 0}.list-check li{margin:7px 0}.code{background:#101827;color:#e5f2ff;padding:15px;border-radius:12px;overflow:auto;font-family:Consolas,monospace;font-size:.92rem;white-space:pre-wrap}.block{display:inline-block;padding:5px 9px;margin:3px;border-radius:7px;color:white;font-weight:700;font-size:.88rem}.motion{background:#2563eb}.control{background:#eab308;color:#302500}.variable{background:#f97316}.event{background:#e879f9;color:#43114c}.operator{background:#16a34a}.field{display:grid;gap:6px;margin:12px 0}.field label{font-weight:700;font-size:.92rem}.field input,.field select,.field textarea{width:100%;border:1px solid #cbd5e1;border-radius:9px;padding:11px;font:inherit;background:white}.field textarea{min-height:90px;resize:vertical}.btn{border:0;border-radius:10px;padding:10px 15px;font-weight:750;cursor:pointer;background:var(--blue);color:white}.btn:hover{filter:brightness(.94)}.btn.secondary{background:#e2e8f0;color:#1e293b}.btn.green{background:var(--green)}.btn.orange{background:var(--orange)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.quiz-item{border:1px solid var(--line);border-radius:13px;padding:16px;margin:13px 0;background:#fff}.quiz-item h3{font-size:1rem;margin:0 0 10px}.option{display:flex;gap:9px;align-items:flex-start;padding:7px 9px;border-radius:8px;cursor:pointer}.option:hover{background:#f1f5f9}.option input{margin-top:5px;accent-color:var(--blue)}.quiz-status{position:sticky;top:0;z-index:3;background:#ffffffed;backdrop-filter:blur(8px);padding:12px 16px;border:1px solid var(--line);border-radius:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}.small{font-size:.86rem}.result{display:none;border-radius:12px;padding:16px;background:#ecfdf5;border:1px solid #a7f3d0;margin-top:14px}.admin{background:#f8fafc;border:1px dashed #94a3b8;border-radius:12px;padding:16px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:650px}th,td{border:1px solid var(--line);padding:9px;text-align:left;font-size:.9rem}th{background:#eaf2ff;color:var(--navy)}footer{text-align:center;padding:24px;color:var(--muted);font-size:.9rem}.progress{height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden;flex:1;min-width:100px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:width .2s}@media(max-width:760px){.half,.third{grid-column:span 12}.card{padding:17px}.hero{padding:0 4px}}@media print{header{background:#fff!important;color:#111;padding:10px}.hero p{color:#333}.nav,.actions,.admin,.quiz-status,.btn{display:none!important}body{background:white}.card{box-shadow:none;break-inside:avoid}.wrap{max-width:none}.quiz-item{break-inside:avoid}input,textarea{border:0!important}.result{display:block}}
+</style>
+</head>
+<body>
+<header><div class="hero">
+<div class="school">SMP NEGERI 2 NGADIREJO • MODUL DIGITAL</div>
+<h1>Algoritma & Pemrograman<br>Berbasis Scratch</h1>
+<p>Belajar membuat program interaktif dengan blok Motion, Control, Variables, Operators, dan Events. Pahami logika, uji program, lalu kembangkan karya sendiri.</p>
+<div class="meta"><span class="pill">Fase / Kelas: D / IX</span><span class="pill">Guru: Budi Winarno, S.Kom.</span><span class="pill">Elemen: Algoritma dan Pemrograman</span><span class="pill">Waktu: <span class="clock" id="clock">--:--:--</span> • <span id="date">--</span></span></div>
+</div></header>
+<main class="wrap">
+<nav class="nav"><a href="#tujuan">Tujuan</a><a href="#materi">Materi</a><a href="#praktik">Praktik</a><a href="#lkpd">LKPD</a><a href="#kuis">Kuis 30/40</a><a href="#guru">Panel Guru</a></nav>
+<div class="grid">
+<section class="card" id="tujuan">
+<h2 class="section-title"><span class="num">1</span> Tujuan Pembelajaran</h2>
+<p>Setelah mengikuti pembelajaran, peserta didik mampu:</p>
+<ul class="list-check"><li>Menjelaskan fungsi blok Motion, Events, Control, Variables, dan Operators pada Scratch.</li><li>Menyusun algoritma berbasis blok dengan urutan yang benar.</li><li>Menggunakan <b>wait</b>, <b>if</b>, dan <b>if else</b> untuk mengendalikan alur program.</li><li>Membuat dan mengubah nilai variabel serta membandingkan nilai menggunakan operator <b>&gt;</b>, <b>=</b>, dan <b>&lt;</b>.</li><li>Menggunakan event <b>when green flag clicked</b> dan <b>broadcast / custom message</b> untuk mengatur jalannya proyek.</li><li>Menguji, menemukan kesalahan, dan memperbaiki program sederhana secara mandiri.</li></ul>
+<div class="callout"><b>Pertanyaan pemantik:</b> Bagaimana membuat sprite bergerak, menunggu beberapa detik, lalu memilih tindakan yang berbeda berdasarkan nilai skor?</div>
+</section>
+<section class="card" id="atp">
+<h2 class="section-title"><span class="num">2</span> Alur Tujuan Pembelajaran (ATP)</h2>
+<ol><li>Mengenali antarmuka Scratch dan kategori blok yang digunakan.</li><li>Menggerakkan sprite menggunakan blok Motion dan memulai skrip dengan Event.</li><li>Mengatur jeda dan pengulangan/percabangan menggunakan Control.</li><li>Membuat variabel, memberi nilai, dan memperbarui nilai selama program berjalan.</li><li>Menerapkan operator perbandingan dalam kondisi if dan if else.</li><li>Menghubungkan skrip dengan event broadcast/custom message.</li><li>Mengembangkan proyek mini, menguji hasil, dan mempresentasikan algoritma.</li></ol>
+<div class="callout"><b>Produk akhir:</b> game mini “Misi Pengumpul Poin” yang menggerakkan sprite, menambah skor, dan menampilkan pesan sesuai skor.</div>
+</section>
+<section class="card" id="materi">
+<h2 class="section-title"><span class="num">3</span> Materi Inti</h2>
+<div class="grid">
+<div class="card half"><h3><span class="block motion">Motion</span></h3><p>Blok untuk mengatur gerak dan posisi sprite.</p><div class="code">move (10) steps
+turn clockwise (15) degrees
+go to x: (0) y: (0)
+change x by (10)</div><p class="muted small">Contoh: <b>move 10 steps</b> menggerakkan sprite 10 langkah sesuai arah hadap.</p></div>
+<div class="card half"><h3><span class="block control">Control</span></h3><p>Blok untuk mengatur jeda dan percabangan.</p><div class="code">wait (1) seconds
+
+if &lt;kondisi&gt; then
+  // aksi jika benar
+end
+
+if &lt;kondisi&gt; then
+  // aksi jika benar
+else
+  // aksi jika salah
+end</div><p class="muted small">if menjalankan aksi saat kondisi benar. if else memilih salah satu dari dua jalur.</p></div>
+<div class="card half"><h3><span class="block variable">Variables</span></h3><p>Variabel menyimpan data yang dapat berubah, misalnya <b>Skor</b>, <b>Waktu</b>, atau <b>Nyawa</b>.</p><div class="code">set [Skor v] to (0)
+change [Skor v] by (1)
+show variable [Skor v]</div><p class="muted small">Gunakan “set” untuk menentukan nilai awal dan “change” untuk menambah/mengurangi.</p></div>
+<div class="card half"><h3><span class="block operator">Operators</span></h3><p>Operator perbandingan menghasilkan nilai benar atau salah.</p><div class="code">(Skor) &gt; (10)   // lebih besar
+(Skor) = (10)   // sama dengan
+(Skor) &lt; (10)   // lebih kecil</div><p class="muted small">Operator ditempatkan pada bagian kondisi blok if / if else.</p></div>
+<div class="card half"><h3><span class="block event">Events</span></h3><p>Event memulai skrip atau mengirim pesan ke skrip lain.</p><div class="code">when green flag clicked
+when I receive [Mulai v]
+broadcast [Selesai v]</div><p class="muted small">Broadcast mengirim pesan. Skrip lain dapat berjalan saat menerima pesan tersebut.</p></div>
+<div class="card half"><h3>Custom message / broadcast</h3><p>Di Scratch, buat pesan khusus melalui menu <b>broadcast [message]</b>, pilih <b>new message</b>, lalu beri nama misalnya “LevelBerikutnya”. Pesan ini menghubungkan beberapa skrip.</p><div class="code">when green flag clicked
+set [Skor v] to (0)
+broadcast [Mulai v]
+
+when I receive [Mulai v]
+move (10) steps
+wait (1) seconds
+if &lt;(Skor) &gt; (5)&gt; then
+  broadcast [LevelBerikutnya v]
+else
+  say [Kumpulkan poin lagi!] for (2) seconds
+end</div></div>
+</div>
+</section>
+<section class="card" id="praktik">
+<h2 class="section-title"><span class="num">4</span> Demo Logika Program</h2>
+<p>Gunakan simulasi sederhana ini untuk memahami bagaimana kondisi <b>if else</b> memilih keluaran berdasarkan nilai skor.</p>
+<div class="field"><label for="scoreDemo">Masukkan nilai Skor</label><input id="scoreDemo" type="number" value="7" min="0" max="100"></div>
+<div class="actions"><button class="btn" onclick="runDemo()">Jalankan kondisi</button></div>
+<div id="demoOutput" class="callout" aria-live="polite">Jika Skor lebih besar dari 5, program akan menampilkan “Level berikutnya!”</div>
+<div class="callout"><b>Algoritma:</b> mulai → set Skor → periksa Skor &gt; 5 → jika benar tampilkan “Level berikutnya”, jika salah tampilkan “Kumpulkan poin lagi”.</div>
+</section>
+<section class="card" id="lkpd">
+<h2 class="section-title"><span class="num">5</span> LKPD — Misi Pengumpul Poin</h2>
+<p class="muted">Isi identitas dan jawaban. Jawaban LKPD tersimpan pada perangkat/browser yang digunakan.</p>
+<div class="grid">
+<div class="half"><div class="field"><label for="studentName">Nama siswa</label><input id="studentName" placeholder="Tuliskan nama lengkap"></div></div>
+<div class="half"><div class="field"><label for="studentClass">Kelas</label><select id="studentClass"><option value="">Pilih kelas</option><option>IX A</option><option>IX B</option><option>IX C</option><option>IX D</option><option>IX E</option><option>IX F</option><option>IX G</option><option>Lainnya</option></select></div></div>
+</div>
+<div class="field"><label>1. Tuliskan algoritma untuk memulai game dan mengatur Skor menjadi 0.</label><textarea id="lk1" placeholder="Urutan blok dan penjelasan..."></textarea></div>
+<div class="field"><label>2. Apa perbedaan blok if dan if else? Berikan contoh kondisi.</label><textarea id="lk2"></textarea></div>
+<div class="field"><label>3. Rancang aturan: jika Skor ≥ 10 tampilkan “Hebat!”, selain itu “Coba lagi!”. Blok apa saja yang diperlukan?</label><textarea id="lk3"></textarea></div>
+<div class="field"><label>4. Jelaskan kegunaan wait dan broadcast/custom message dalam proyekmu.</label><textarea id="lk4"></textarea></div>
+<div class="field"><label>5. Ide pengembangan game (sprite, tujuan, aturan, dan variabel yang digunakan).</label><textarea id="lk5"></textarea></div>
+<div class="actions"><button class="btn green" onclick="saveLKPD()">Simpan LKPD</button><button class="btn secondary" onclick="printLKPD()">Cetak LKPD</button></div><div id="lkpdMsg" class="muted small" aria-live="polite"></div>
+</section>
+<section class="card" id="kuis">
+<h2 class="section-title"><span class="num">6</span> Kuis Interaktif — 30 dari 40 Soal</h2>
+<p>Kuis memilih 30 soal secara acak dari bank 40 soal. Urutan soal dan pilihan jawaban diacak setiap kali kuis baru dimulai. Pilih satu jawaban untuk setiap soal.</p>
+<div class="quiz-status"><div><b>Waktu sekarang:</b> <span id="quizClock">--:--:--</span></div><div><b>Terjawab:</b> <span id="answered">0</span>/30</div><div class="progress"><span id="progressBar"></span></div></div>
+<div id="quizIdentity" class="grid">
+<div class="half"><div class="field"><label for="quizName">Nama siswa</label><input id="quizName" placeholder="Nama lengkap"></div></div>
+<div class="half"><div class="field"><label for="quizClass">Kelas</label><select id="quizClass"><option value="">Pilih kelas</option><option>IX A</option><option>IX B</option><option>IX C</option><option>IX D</option><option>IX E</option><option>IX F</option><option>IX G</option><option>Lainnya</option></select></div></div>
+</div>
+<div class="actions"><button class="btn" id="startQuiz" onclick="startQuiz()">Mulai / Acak Ulang Kuis</button></div>
+<div id="quizQuestions"></div>
+<div class="actions"><button class="btn green" onclick="submitQuiz()">Kumpulkan Jawaban & Lihat Nilai</button><button class="btn secondary" onclick="window.print()">Cetak halaman/soal</button></div>
+<div id="quizResult" class="result" aria-live="polite"></div>
+</section>
+<section class="card" id="guru">
+<h2 class="section-title"><span class="num">7</span> Panel Guru / Admin</h2>
+<p>Hasil kuis dan LKPD disimpan di penyimpanan lokal browser pada perangkat ini. Untuk menjaga privasi, gunakan perangkat sekolah dan jangan membagikan file data kepada pihak yang tidak berwenang.</p>
+<div class="admin">
+<div class="field"><label for="adminPin">PIN admin</label><input id="adminPin" type="password" placeholder="PIN demo: 1234"></div>
+<div class="actions"><button class="btn" onclick="adminLogin()">Buka data tersimpan</button><button class="btn secondary" onclick="exportData()">Unduh semua data (JSON)</button><button class="btn secondary" onclick="exportCSV()">Unduh rekap kuis (CSV)</button></div>
+<div id="adminPanel" style="display:none;margin-top:18px">
+<h3>Rekap hasil kuis</h3><div class="table-wrap"><table><thead><tr><th>Nama</th><th>Kelas</th><th>Nilai</th><th>Benar</th><th>Waktu</th></tr></thead><tbody id="resultRows"></tbody></table></div>
+<h3>Rekap LKPD</h3><div class="table-wrap"><table><thead><tr><th>Nama</th><th>Kelas</th><th>Disimpan</th><th>Jawaban ringkas</th></tr></thead><tbody id="lkpdRows"></tbody></table></div>
+<div class="actions"><button class="btn orange" onclick="clearData()">Hapus semua data lokal</button></div>
+<p class="small muted">PIN 1234 hanya pengunci tampilan sederhana, bukan sistem keamanan. Data lokal tidak otomatis terkirim ke guru atau tersinkron antarperangkat. Untuk pengumpulan jarak jauh diperlukan backend/server atau integrasi formulir.</p>
+</div>
+<div id="adminMsg" class="small muted" aria-live="polite"></div>
+</div>
+</section>
+</div>
+</main>
+<footer>Modul Interaktif Informatika • SMP Negeri 2 Ngadirejo • Budi Winarno, S.Kom.</footer>
+<script>
+const pad=n=>String(n).padStart(2,'0');
+function updateClock(){const d=new Date();const t=`${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;document.getElementById('clock').textContent=t;document.getElementById('quizClock').textContent=t;document.getElementById('date').textContent=d.toLocaleDateString('id-ID',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});}
+updateClock();setInterval(updateClock,1000);
+function runDemo(){let s=Number(document.getElementById('scoreDemo').value)||0;document.getElementById('demoOutput').textContent=s>5?`Skor = ${s}. Kondisi Skor > 5 BENAR → broadcast “LevelBerikutnya” / tampilkan “Hebat, lanjut level!”`:`Skor = ${s}. Kondisi Skor > 5 SALAH → tampilkan “Kumpulkan poin lagi!”`; }
+const bank=[
+['Blok Motion pada Scratch digunakan untuk ...',['Mengatur gerakan dan posisi sprite','Mengatur suara komputer','Menyimpan file proyek','Menghapus semua variabel'],0],
+['Apa fungsi blok “move 10 steps”?',['Mengubah ukuran 10 kali','Menggerakkan sprite 10 langkah','Menunggu 10 detik','Mengubah skor menjadi 10'],1],
+['Blok “turn clockwise 15 degrees” akan ...',['Memutar sprite searah jarum jam 15 derajat','Memindahkan sprite 15 langkah','Mengulang 15 kali','Menghentikan skrip'],0],
+['Kategori blok untuk membuat jeda adalah ...',['Motion','Events','Control','Variables'],2],
+['Fungsi blok “wait 2 seconds” yaitu ...',['Menghentikan program selamanya','Menunggu 2 detik sebelum melanjutkan','Mengulang program dua kali','Mengurangi skor dua poin'],1],
+['Blok “if then” menjalankan aksi ketika ...',['Kondisi bernilai benar','Kondisi selalu salah','Sprite menyentuh tepi saja','Variabel dihapus'],0],
+['Apa perbedaan utama if dan if else?',['if else memiliki jalur alternatif saat kondisi salah','if selalu lebih cepat','if else hanya untuk gerak','Tidak ada perbedaan'],0],
+['Operator > berarti ...',['Lebih kecil dari','Sama dengan','Lebih besar dari','Tidak sama dengan'],2],
+['Operator = pada kondisi Scratch berarti ...',['Penugasan nilai saja','Membandingkan apakah dua nilai sama','Membagi angka','Mengulang aksi'],1],
+['Jika Skor = 8, apakah kondisi Skor < 10 benar?',['Benar','Salah','Tidak bisa diketahui','Program selalu berhenti'],0],
+['Jika Skor bernilai 12, kondisi Skor > 10 adalah ...',['Benar','Salah','Selalu kosong','Tidak memiliki hasil'],0],
+['Variabel pada program berguna untuk ...',['Menyimpan data yang dapat berubah','Menggambar latar saja','Menghubungkan kabel','Menghapus sprite otomatis'],0],
+['Blok “set Skor to 0” berarti ...',['Menambah skor 0 tanpa batas','Menetapkan nilai Skor menjadi 0','Mengurangi skor 0','Menyembunyikan skor'],1],
+['Blok “change Skor by 1” digunakan untuk ...',['Menambah nilai Skor satu','Mengubah nama variabel','Mengatur waktu satu detik','Memindah sprite satu piksel'],0],
+['Kategori untuk memulai skrip saat bendera hijau diklik adalah ...',['Control','Events','Motion','Operators'],1],
+['Event “when green flag clicked” berjalan saat ...',['Bendera hijau diklik','Skor mencapai 10','Sprite dihapus','Satu detik berlalu'],0],
+['Broadcast pada Scratch berfungsi untuk ...',['Mengirim pesan pemicu ke skrip lain','Mengubah sprite menjadi suara','Mengunduh proyek otomatis','Mengunci keyboard'],0],
+['Pesan khusus “LevelBerikutnya” dibuat agar ...',['Skrip lain dapat merespons pesan tersebut','Sprite selalu diam','Skor terhapus','Program tidak bisa dijalankan'],0],
+['Urutan awal yang masuk akal untuk game skor adalah ...',['Set Skor ke 0 lalu mulai permainan','Periksa skor sebelum dibuat tanpa nilai awal','Hapus semua skrip','Tunggu tanpa batas'],0],
+['Jika Skor > 5 benar, cabang if else yang sesuai dijalankan adalah ...',['Cabang if','Cabang else','Keduanya selalu','Tidak satu pun'],0],
+['Jika Skor = 3 dan kondisi Skor > 5, maka ...',['Kondisi benar','Kondisi salah','Skor otomatis menjadi 5','Broadcast pasti terkirim'],1],
+['Jika kondisi if bernilai salah dan tidak ada else, maka ...',['Aksi di dalam if dilewati','Aksi if tetap berjalan','Nilai variabel selalu nol','Scratch menutup aplikasi'],0],
+['Apa tujuan menguji program setelah menyusun blok?',['Memastikan hasil sesuai rancangan dan menemukan kesalahan','Memperindah nama file saja','Menghapus kebutuhan algoritma','Membuat komputer lebih berat'],0],
+['Kesalahan logika terjadi ketika ...',['Program berjalan tetapi hasilnya tidak sesuai tujuan','Komputer tidak memiliki layar','Warna blok berbeda','Nama proyek terlalu pendek'],0],
+['Untuk membuat sprite bergerak lalu berhenti sejenak, kombinasi yang tepat adalah ...',['move → wait','wait → hapus variabel','if → tutup browser','broadcast → matikan komputer'],0],
+['Jika ingin menampilkan “Hebat!” ketika skor minimal 10, kondisi yang tepat adalah ...',['Skor < 10','Skor = 0','Skor > 10 saja','Skor > 9 atau Skor = 10'],3],
+['Untuk kondisi “Skor kurang dari 10”, operator yang dipakai adalah ...',['>','= ','<','broadcast'],2],
+['Mengapa nilai awal variabel penting?',['Agar program mulai dari keadaan yang terdefinisi','Agar sprite selalu di tengah','Agar tidak perlu kondisi','Agar semua pesan terhapus'],0],
+['Satu pesan broadcast dapat dipakai untuk ...',['Memicu skrip yang menunggu pesan itu','Mengubah kode menjadi HTML','Mencetak kuis otomatis','Mengganti perangkat keras'],0],
+['Blok “when I receive [Mulai]” akan berjalan saat ...',['Pesan Mulai diterima','Tombol panah ditekan saja','Skor bernilai nol saja','Sprite menyentuh tepi'],0],
+['Untuk mengecek apakah skor tepat 10, kondisi yang benar adalah ...',['Skor > 10','Skor < 10','Skor = 10','Skor > 0'],2],
+['Jika Skor 7 dan kondisi Skor < 10, hasilnya ...',['Benar','Salah','Selalu error','Skor menjadi 10'],0],
+['Apa fungsi komentar/catatan dalam merancang algoritma?',['Membantu menjelaskan tujuan dan alur program','Mengubah operator > menjadi <','Menjalankan skrip tanpa event','Mengganti nilai variabel otomatis'],0],
+['Algoritma adalah ...',['Urutan langkah logis untuk menyelesaikan masalah','Nama lain dari sprite','Perangkat keras untuk mengetik','Hanya gambar latar'],0],
+['Ketika ingin skor bertambah setiap kali objek dikumpulkan, blok yang sesuai adalah ...',['change Skor by 1','set Skor to 0 setiap saat','wait 1 seconds saja','turn 15 degrees'],0],
+['Jika cabang else menampilkan “Coba lagi”, kapan pesan itu muncul?',['Saat kondisi if bernilai salah','Saat kondisi if benar','Setiap kali variabel dibuat','Hanya saat bendera hijau tidak pernah diklik'],0],
+['Apa yang harus dilakukan jika skrip tidak merespons broadcast?',['Periksa nama pesan dan blok when I receive','Ganti semua variabel menjadi gambar','Hapus semua event','Ubah warna latar saja'],0],
+['Dalam proyek game, variabel Waktu paling tepat digunakan untuk ...',['Menyimpan nilai waktu permainan','Memutar sprite','Mengirim pesan tanpa event','Mengganti ukuran panggung saja'],0],
+['Blok “go to x: 0 y: 0” mengatur ...',['Posisi sprite ke koordinat x=0 dan y=0','Skor menjadi nol','Jeda menjadi nol detik','Pesan menjadi nol'],0],
+['Apa praktik terbaik saat membuat proyek Scratch?',['Buat langkah kecil, uji, lalu perbaiki berdasarkan hasil','Susun semua blok tanpa menguji','Gunakan variabel tanpa nama jelas','Abaikan hasil yang salah'],0]
+];
+let currentQuestions=[],submitted=false;
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function startQuiz(){if(!document.getElementById('quizName').value.trim()||!document.getElementById('quizClass').value){alert('Isi nama siswa dan kelas terlebih dahulu.');return;}submitted=false;document.getElementById('quizResult').style.display='none';currentQuestions=shuffle(bank.map((q,i)=>({id:i,q:q[0],opts:shuffle(q[1].map((o,j)=>({text:o,correct:j===q[2]})))}))).slice(0,30);renderQuestions();window.scrollTo({top:document.getElementById('kuis').offsetTop,behavior:'smooth'});}
+function renderQuestions(){const root=document.getElementById('quizQuestions');root.innerHTML='';currentQuestions.forEach((q,i)=>{const d=document.createElement('div');d.className='quiz-item';d.innerHTML=`<h3>${i+1}. ${escapeHtml(q.q)}</h3>`+q.opts.map((o,j)=>`<label class="option"><input type="radio" name="q${i}" value="${j}" onchange="updateProgress()"> <span>${String.fromCharCode(65+j)}. ${escapeHtml(o.text)}</span></label>`).join('');root.appendChild(d);});updateProgress();}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function updateProgress(){let n=0;currentQuestions.forEach((q,i)=>{if(document.querySelector(`input[name="q${i}"]:checked`))n++;});document.getElementById('answered').textContent=n;document.getElementById('progressBar').style.width=(n/30*100)+'%';}
+function getStore(k){try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(e){return []}}
+function setStore(k,v){localStorage.setItem(k,JSON.stringify(v));}
+function submitQuiz(){if(!currentQuestions.length){alert('Klik “Mulai / Acak Ulang Kuis” terlebih dahulu.');return;}if(submitted){alert('Kuis ini sudah dikumpulkan. Mulai kuis baru jika ingin mengulang.');return;}let answered=0,correct=0;const details=[];currentQuestions.forEach((q,i)=>{let el=document.querySelector(`input[name="q${i}"]:checked`);if(el){answered++;if(q.opts[Number(el.value)].correct)correct++;details.push({nomor:i+1,soal:q.q,jawaban:q.opts[Number(el.value)].text,benar:q.opts[Number(el.value)].correct});}else details.push({nomor:i+1,soal:q.q,jawaban:'Tidak dijawab',benar:false});});let score=Math.round(correct/30*100);const rec={nama:document.getElementById('quizName').value.trim(),kelas:document.getElementById('quizClass').value,nilai:score,benar:correct,terjawab:answered,waktu:new Date().toLocaleString('id-ID'),detail:details};let data=getStore('scratchQuizResults');data.push(rec);setStore('scratchQuizResults',data);submitted=true;const r=document.getElementById('quizResult');r.style.display='block';r.innerHTML=`<h3>Hasil Kuis</h3><p><b>${escapeHtml(rec.nama)}</b> (${escapeHtml(rec.kelas)})</p><p>Nilai: <strong style="font-size:1.8rem">${score}</strong> / 100</p><p>Jawaban benar: ${correct} dari 30 • Terjawab: ${answered} dari 30</p><p class="small">Waktu pengumpulan: ${rec.waktu}. Hasil tersimpan pada browser/perangkat ini.</p>`;renderAdminTables();}
+function saveLKPD(){const nama=document.getElementById('studentName').value.trim(),kelas=document.getElementById('studentClass').value;if(!nama||!kelas){alert('Isi nama dan kelas pada bagian LKPD.');return;}const rec={nama,kelas,waktu:new Date().toLocaleString('id-ID'),jawaban:[1,2,3,4,5].map(i=>document.getElementById('lk'+i).value)};let data=getStore('scratchLKPDResults');data.push(rec);setStore('scratchLKPDResults',data);document.getElementById('lkpdMsg').textContent='LKPD tersimpan di browser pada '+rec.waktu+'.';renderAdminTables();}
+function printLKPD(){const fields=['studentName','studentClass','lk1','lk2','lk3','lk4','lk5'];let vals=fields.map(id=>document.getElementById(id).value);if(!vals[0]){alert('Isi LKPD terlebih dahulu sebelum mencetak.');return;}window.print();}
+function adminLogin(){if(document.getElementById('adminPin').value!=='1234'){document.getElementById('adminMsg').textContent='PIN tidak sesuai. Gunakan PIN demo 1234 atau ubah PIN pada kode HTML sebelum dibagikan.';return;}document.getElementById('adminPanel').style.display='block';document.getElementById('adminMsg').textContent='Data lokal berhasil ditampilkan.';renderAdminTables();}
+function renderAdminTables(){const q=getStore('scratchQuizResults'),l=getStore('scratchLKPDResults');const qr=document.getElementById('resultRows'),lr=document.getElementById('lkpdRows');if(!qr||!lr)return;qr.innerHTML=q.slice().reverse().map(r=>`<tr><td>${escapeHtml(r.nama)}</td><td>${escapeHtml(r.kelas)}</td><td>${r.nilai}</td><td>${r.benar}/30</td><td>${escapeHtml(r.waktu)}</td></tr>`).join('')||'<tr><td colspan="5">Belum ada hasil kuis.</td></tr>';lr.innerHTML=l.slice().reverse().map(r=>`<tr><td>${escapeHtml(r.nama)}</td><td>${escapeHtml(r.kelas)}</td><td>${escapeHtml(r.waktu)}</td><td>${escapeHtml(r.jawaban.map((a,i)=>`${i+1}. ${a}`).join(' | ')).slice(0,500)}</td></tr>`).join('')||'<tr><td colspan="4">Belum ada LKPD tersimpan.</td></tr>';}
+function downloadFile(name,content,type){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);}
+function exportData(){const payload={hasilKuis:getStore('scratchQuizResults'),hasilLKPD:getStore('scratchLKPDResults'),diekspor:new Date().toISOString()};downloadFile('data-modul-scratch-spenada.json',JSON.stringify(payload,null,2),'application/json');}
+function exportCSV(){const data=getStore('scratchQuizResults');const rows=[['Nama','Kelas','Nilai','Benar','Terjawab','Waktu'],...data.map(r=>[r.nama,r.kelas,r.nilai,r.benar,r.terjawab,r.waktu])];const csv=rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');downloadFile('rekap-kuis-scratch-spenada.csv','\ufeff'+csv,'text/csv;charset=utf-8;');}
+function clearData(){if(!confirm('Yakin menghapus seluruh data kuis dan LKPD dari browser ini? Tindakan tidak dapat dibatalkan.'))return;localStorage.removeItem('scratchQuizResults');localStorage.removeItem('scratchLKPDResults');renderAdminTables();document.getElementById('adminMsg').textContent='Data lokal telah dihapus.';}
+renderAdminTables();
+</script>
+</body>
+</html>
